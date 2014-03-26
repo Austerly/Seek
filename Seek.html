@@ -12,19 +12,32 @@
         <style type="text/css">
         #square {
 
- width: 97.5%;
- position: fixed;
+ width: 10%;
+ position: absolute;
  background-color: #8A492E;
- z-index: 1;
- margin-bottom: 5;
- margin-top: 5;
- padding: 15% 15% 30% 15%;
+ z-index: 3;
+ margin: 10% 30% 0% 30%;
+ padding: 8% 15% 5% 15%;
  clear: both;
  border-radius: 10%;
  text-align: center;
+ font-color: yellow;
+
 
  
         }
+#background-square {
+    width: 10%;
+ position: absolute;
+ background-color: yellow;
+ z-index: 2;
+ margin: 10% 30% 80% 30%;
+ padding: 8% 15% 14% 15%;
+ clear: both;
+ border-radius: 10%
+ text-align: center;
+
+}
 #body {
     background-color: teal;
 }
@@ -34,10 +47,12 @@
         <h1>
             Seek
         </h1>
-        <label style="text-align:center">Search item</label>
+        <label style="text-align:center"><b>Search:</b></label>
         <input type = "text"
         id = "myText"
         value = "Enter Search Term Here"/>
     </element>
+    <div id="background-square">
+    </div>
 	</body>
 </html>
